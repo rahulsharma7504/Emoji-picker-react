@@ -1,0 +1,46 @@
+<!-- emailTemplate.html -->
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <marquee behavior="" direction="">Rahul</marquee>
+        <h1>Welcome to Our Newsletter!</h1>
+        <p>Stay updated with our latest news and events.</p>
+    </div>
+    <div>
+        <p>Hello {{ userName }},</p>
+        <p>This email contains dynamic content generated at runtime.</p>
+        <p>
+            <a class="button" href="{{ buttonLink }}">Read More</a>
+        </p>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2024 Your Company. All rights reserved.</p>
+    </div>
+</body>
+</html>
